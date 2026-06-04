@@ -1,25 +1,61 @@
-<h1>Active Directory - User and role management w/ Real World Scenarios </h1>
+# Active Directory , User and Role Management
+## Real-World Identity and Access Management Lab
 
-
-<h2>Description</h2>
-Built a fully functional Active Directory domain environment 
-using VirtualBox and Windows Server 2025 to develop hands-on 
-experience with enterprise identity and access management. 
-This lab simulates a real-world organizational IT environment 
-including domain setup, user and group management, GPO 
+## Overview
+Built a fully functional Active Directory domain environment
+using VirtualBox and Windows Server 2025 to develop hands-on
+experience with enterprise identity and access management.
+This lab simulates a real-world organizational IT environment
+including domain setup, user and group management, GPO
 configuration, remote access, and client machine integration.
-<br />
 
-<h2>Environments Used </h2>
-
+## Environment
 | Component | Details |
 |-----------|---------|
+| Hypervisor | VirtualBox |
 | Server OS | Windows Server 2025 |
 | Client OS | Windows 11 |
 | Domain | adiit.lab |
-| Lab Type | Local Active Directory |
+| Lab Type | On-Premise Active Directory |
 
-<h2>Program walk-through:</h2>
+## Skills Demonstrated
+- Organizational Unit (OU) design and hierarchy
+- User account creation and lifecycle management
+- Security group creation and role-based access control (RBAC)
+- Group Policy Object (GPO) configuration
+- Account lockout policy enforcement
+- Password policy configuration
+- Role delegation with least privilege principles
+- Remote Desktop Protocol (RDP) access management
+- Client machine domain join and authentication
+- SYSVOL logon script configuration
+- Account lockout identification and recovery
+- Temporary password assignment and forced reset
+
+## Real World Application
+| Lab Task | Real World Scenario |
+|----------|-------------------|
+| OU Creation | Organizing staff by department for targeted policy application |
+| User Account Creation | New employee onboarding, IT provisioning access on Day 1 |
+| Security Group Assignment | Ensuring staff only access systems relevant to their role |
+| GPO - Password Policy | Enforcing organization-wide password security standards |
+| GPO - Account Lockout | Protecting against brute force login attempts |
+| Role Delegation | Granting helpdesk staff limited admin rights without full domain admin |
+| Account Lockout Recovery | Staff locked out, common helpdesk scenario |
+| Temporary Password | Secure credential handoff during password reset procedure |
+| Domain Join | Setting up a new workstation for a new hire |
+| SYSVOL Logon Script | Automating drive mapping so staff have correct folders on login |
+| RDP Configuration | Enabling IT staff to remotely support users without being onsite |
+| Login Restriction | Preventing staff from logging in outside their shift hours |
+
+## Notable Scenario, Duplicate Group Assignment
+During the lab a duplicate group assignment error was encountered
+and documented. This real-world troubleshooting scenario
+demonstrates the importance of naming conventions in an enterprise
+AD environments, a lesson applied by implementing standardized
+group naming before continuing.
+
+## Lab Walkthrough
 
 <p align="center">
 Creating Organizational Units (OUs): <br/>
@@ -110,7 +146,22 @@ Configuring SYSVOL for User account:  <br/>
 <img src="https://i.imgur.com/J4bEM8L.png" height="80%" width="80%" alt="Active Directory Walkthrough"/>
 </p>
 
+## Key Takeaways
+- OU structure is the foundation of effective GPO application,
+  policies applied at the wrong level affect unintended users
+- Least privilege through role delegation is more secure than
+  granting full domain admin rights for limited administrative tasks
+- Naming conventions must be established before group creation,
+  duplicate names cause assignment failures in production environments
+- SYSVOL logon scripts significantly reduce manual onboarding
+  steps by automating drive mapping on user login
+- Account lockout policies must balance security with usability,
+  too aggressive and you create unnecessary helpdesk tickets
 
+## Connect
+- LinkedIn: linkedin.com/in/nuhabkhan
+- Portfolio: github.com/Adi-NY/it-portfolio
+- Email: adiibnekhann@gmail.com
 <!--
  ```diff
 - text in red
