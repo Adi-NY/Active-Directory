@@ -160,7 +160,7 @@ Configuring SYSVOL for User account:  <br/>
 
 ## Connect
 - LinkedIn: linkedin.com/in/nuhabkhan
-- Portfolio: github.com/Adi-NY/it-portfolio
+- Portfolio: github.com/Adi-NY
 - Email: adiibnekhann@gmail.com
 <!--
  ```diff
